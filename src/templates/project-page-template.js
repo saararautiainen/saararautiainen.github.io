@@ -17,8 +17,6 @@ export default function ProjectPage({ pageContext: { project } }) {
   const [contact, setContact] = useState({});
   const [footer, setFooter] = useState({});
 
-  console.log(project);
-
   useEffect(() => {
     setContact({ ...contactData });
     setFooter({ ...footerData });

@@ -6,7 +6,6 @@ exports.createPages = ({ actions }) => {
   const { projectsData } = data;
 
   projectsData.forEach((project) => {
-    console.log(project);
     createPage({
       path: `/${project.path}`,
       component: require.resolve(`./src/templates/project-page-template.js`),
