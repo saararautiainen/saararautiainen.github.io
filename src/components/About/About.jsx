@@ -2,13 +2,11 @@ import React, { useContext, useState, useEffect } from 'react';
 import Fade from 'react-reveal/Fade';
 import { Container, Row, Col } from 'react-bootstrap';
 import Title from '../Title/Title';
-import AboutImg from '../Image/AboutImg';
 import PortfolioContext from '../../context/context';
 
 const About = () => {
   const { about } = useContext(PortfolioContext);
-  const { img, paragraphOne, paragraphTwo, paragraphThree, resume } = about;
-
+  const { paragraphOne, paragraphTwo, paragraphThree, resume, webskills, uxskills, tools } = about;
   const [isDesktop, setIsDesktop] = useState(false);
   const [isMobile, setIsMobile] = useState(false);
 
@@ -29,33 +27,43 @@ const About = () => {
         <Row className="about-wrapper">
           <Col md={6} sm={12}>
             <Fade bottom duration={1000} delay={600} distance="30px">
-              <div className="about-wrapper__image">
+              {/* <div className="about-wrapper__image">
                 <AboutImg alt="profile picture" filename={img} />
+              </div> */}
+              <div className="about-wrapper__info">
+                <h3 className="about-wrapper__info-title">
+                  <span role="img" aria-label="laptop" style={{ fontSize: '20px' }}>
+                    👩‍💻
+                  </span>{' '}
+                  Web Skills
+                </h3>
+                <p className="about-wrapper__info-text">{webskills || ''}</p>
+                <h3 className="about-wrapper__info-title">
+                  <span role="img" aria-label="notebook" style={{ fontSize: '20px' }}>
+                    📔
+                  </span>
+                  UX Skills
+                </h3>
+                <p className="about-wrapper__info-text">{uxskills || ''}</p>
+                <h3 className="about-wrapper__info-title">
+                  <span role="img" aria-label="gear" style={{ fontSize: '20px' }}>
+                    ⚙️
+                  </span>
+                  Tools
+                </h3>
+                <p className="about-wrapper__info-text">{tools || ''}</p>
               </div>
             </Fade>
           </Col>
           <Col md={6} sm={12}>
             <Fade left={isDesktop} bottom={isMobile} duration={1000} delay={1000} distance="30px">
               <div className="about-wrapper__info">
-                <p className="about-wrapper__info-text">
-                  {paragraphOne ||
-                    'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Excepturi neque, ipsa animi maiores repellendu distinctioaperiam earum dolor voluptatum consequatur blanditiis inventore debitis fuga numquam voluptate architecto itaque molestiae.'}
-                </p>
-                <p className="about-wrapper__info-text">
-                  {paragraphTwo ||
-                    'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Excepturi neque, ipsa animi maiores repellendu distinctioaperiam earum dolor voluptatum consequatur blanditiis inventore debitis fuga numquam voluptate architecto itaque molestiae.'}
-                </p>
-                <p className="about-wrapper__info-text">
-                  {paragraphThree || 'Lorem ipsum dolor sit, amet consectetur adipisicing elit.'}
-                </p>
+                <p className="about-wrapper__info-text">{paragraphOne || ''}</p>
+                <p className="about-wrapper__info-text">{paragraphTwo || ''}</p>
+                <p className="about-wrapper__info-text">{paragraphThree || ''}</p>
                 {resume && (
                   <span className="d-flex mt-3">
-                    <a
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="cta-btn cta-btn--resume"
-                      href={resume}
-                    >
+                    <a className="cta-btn cta-btn--resume" href="SaaraCV_march2020.pdf" download>
                       Resume
                     </a>
                   </span>

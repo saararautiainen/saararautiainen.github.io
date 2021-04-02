@@ -7,7 +7,7 @@ import '../style/main.scss';
 
 export default () => {
   const { title, lang, description } = headData;
-
+  console.log('index');
   return (
     <>
       <Helmet>

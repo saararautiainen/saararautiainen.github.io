@@ -4,12 +4,13 @@ import About from './About/About';
 import Projects from './Projects/Projects';
 import Contact from './Contact/Contact';
 import Footer from './Footer/Footer';
+import Header from './Header/Header';
 
 import { PortfolioProvider } from '../context/context';
 
 import { heroData, aboutData, projectsData, contactData, footerData } from '../mock/data';
 
-function App() {
+function Home() {
   const [hero, setHero] = useState({});
   const [about, setAbout] = useState({});
   const [projects, setProjects] = useState([]);
@@ -26,6 +27,7 @@ function App() {
 
   return (
     <PortfolioProvider value={{ hero, about, projects, contact, footer }}>
+      <Header />
       <Hero />
       <About />
       <Projects />
@@ -35,4 +37,4 @@ function App() {
   );
 }
 
-export default App;
+export default Home;
