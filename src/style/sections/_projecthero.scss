@@ -59,9 +59,10 @@
 
       @include respond(phone){
         float: none;
+        text-align: center;
       }
       @include respond(tab-port) {
-       
+        text-align: center;
         float: none;
 
       }
