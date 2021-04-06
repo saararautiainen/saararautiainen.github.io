@@ -49,7 +49,7 @@ export const projectsData = [
     info:
       'Interaction design research and design project showcasing the musical history of Bristol. The primary focus was on conducting extensive research on locations, topics and interactions which could be applied to the design of a prototype. The project concentrates on the coming together of these aspects in order to use interactivity as a tool to express emotion and create meaningful experiences.',
     info2:
-      'We designed an open space which the user could freely explore to interact with the space with their movement. This application will provide audio, varying from chanting crowds to musical performances. The sound level is dictated by the users position in the installation. ',
+      'The research findings led to a designed experience of an open space which the user could freely explore to interact with the space with their movement. A prototype of the concept was created with Sketchup.',
     technologies: ['Sketchup'],
     problem:
       'During the last few years Bristol has seen demonstrations against housing developers jeopardizing the operating of grassroots music venues, making it clear that it is a political issue with an emotional charge. The aim of Saving Bristol Sound was to convey these feelings to a larger audience through an interactive installation. For this we had to consider ways of capturing such an abstract concept as emotion, which can be reflected in various forms that can be open for interpretation. ',
