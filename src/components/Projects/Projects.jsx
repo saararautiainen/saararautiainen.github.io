@@ -28,46 +28,12 @@ const Projects = () => {
       <Container>
         <div className="project-wrapper">
           <Title title="Projects" />
-          {projects.map((project) => {
-            const { title, info, info2, repo, img, id, path } = project;
+          <Row>
+            {projects.map((project) => {
+              const { title, info, info2, repo, img, id, path } = project;
 
-            return (
-              <Row key={id}>
-                <Col lg={4} sm={12}>
-                  <Fade
-                    left={isDesktop}
-                    bottom={isMobile}
-                    duration={1000}
-                    delay={500}
-                    distance="30px"
-                  >
-                    <div className="project-wrapper__text">
-                      <h3 className="project-wrapper__text-title">{title || 'Project Title'}</h3>
-                      <div>
-                        <p>{info || ''}</p>
-                        <p className="mb-4">{info2 || ''}</p>
-                      </div>
-
-                      {path && (
-                        <a rel="noopener noreferrer" className="cta-btn cta-btn--hero" href={path}>
-                          Check it out
-                        </a>
-                      )}
-
-                      {repo && (
-                        <a
-                          target="_blank"
-                          rel="noopener noreferrer"
-                          className="cta-btn text-color-main"
-                          href={repo}
-                        >
-                          Source Code
-                        </a>
-                      )}
-                    </div>
-                  </Fade>
-                </Col>
-                <Col lg={8} sm={12}>
+              return (
+                <Col className="project-wrapper__col" lg={6} sm={12} key={id}>
                   <Fade
                     right={isDesktop}
                     bottom={isMobile}
@@ -102,10 +68,43 @@ const Projects = () => {
                       </Link>
                     </div>
                   </Fade>
+                  <Fade
+                    left={isDesktop}
+                    bottom={isMobile}
+                    duration={1000}
+                    delay={500}
+                    distance="30px"
+                  >
+                    <div className="project-wrapper__text">
+                      <h3 className="project-wrapper__text-title">{title || 'Project Title'}</h3>
+
+                      <div>
+                        <p>{info || ''}</p>
+                        <p className="mb-4">{info2 || ''}</p>
+                      </div>
+
+                      {path && (
+                        <a rel="noopener noreferrer" className="cta-btn cta-btn--hero" href={path}>
+                          Check it out
+                        </a>
+                      )}
+
+                      {repo && (
+                        <a
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          className="cta-btn text-color-main"
+                          href={repo}
+                        >
+                          Source Code
+                        </a>
+                      )}
+                    </div>
+                  </Fade>
                 </Col>
-              </Row>
-            );
-          })}
+              );
+            })}
+          </Row>
         </div>
       </Container>
     </section>

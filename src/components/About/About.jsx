@@ -3,6 +3,7 @@ import Fade from 'react-reveal/Fade';
 import { Container, Row, Col } from 'react-bootstrap';
 import Title from '../Title/Title';
 import PortfolioContext from '../../context/context';
+import CV from '../../images/saara_rautiainen_CV.pdf';
 
 const About = () => {
   const { about } = useContext(PortfolioContext);
@@ -30,7 +31,7 @@ const About = () => {
               {/* <div className="about-wrapper__image">
                 <AboutImg alt="profile picture" filename={img} />
               </div> */}
-              <div className="about-wrapper__info">
+              <div className="about-wrapper__info" id="skills-wrapper">
                 <h3 className="about-wrapper__info-title">
                   <span role="img" aria-label="laptop" style={{ fontSize: '20px' }}>
                     👩‍💻
@@ -63,8 +64,8 @@ const About = () => {
                 <p className="about-wrapper__info-text">{paragraphThree || ''}</p>
                 {resume && (
                   <span className="d-flex mt-3">
-                    <a className="cta-btn cta-btn--resume" href="SaaraCV_march2020.pdf" download>
-                      Resume
+                    <a className="cta-btn cta-btn--resume" href={CV} download>
+                      Download my resume
                     </a>
                   </span>
                 )}

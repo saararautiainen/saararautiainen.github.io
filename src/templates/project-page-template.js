@@ -16,7 +16,7 @@ import ProjectImg from '../components/Image/ProjectImg';
 export default function ProjectPage({ pageContext: { project } }) {
   const [contact, setContact] = useState({});
   const [footer, setFooter] = useState({});
-
+  console.log(project);
   useEffect(() => {
     setContact({ ...contactData });
     setFooter({ ...footerData });
@@ -137,6 +137,7 @@ export default function ProjectPage({ pageContext: { project } }) {
                 </Fade>
               </Col>
             </Row>
+
             {project.solutionimgs.length > 0 && (
               <Row>
                 <Col lg={6} sm={4}>

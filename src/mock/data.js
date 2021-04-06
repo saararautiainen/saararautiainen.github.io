@@ -49,10 +49,10 @@ export const projectsData = [
     info:
       'Interaction design research and design project showcasing the musical history of Bristol. The primary focus was on conducting extensive research on locations, topics and interactions which could be applied to the design of a prototype. The project concentrates on the coming together of these aspects in order to use interactivity as a tool to express emotion and create meaningful experiences.',
     info2:
-      'We designed an open space which the user could freely explore to interact with the space with their movement. The user would be required to wear headphones that will guide them through a journey, using a location based application downloaded prior to entering. This application will provide audio, varying from chanting crowds to musical performances. The sound level is dictated by the users position in the installation. ',
+      'We designed an open space which the user could freely explore to interact with the space with their movement. This application will provide audio, varying from chanting crowds to musical performances. The sound level is dictated by the users position in the installation. ',
     technologies: ['Sketchup'],
     problem:
-      'During the last few years Bristol has seen demonstrations against housing developers jeopardizing the operating of grassroots music venues, making it clear that it is a political issue with an emotional charge. The aim of ‘Saving Bristol Sound ‘ was to convey these feelings to a larger audience through an interactive installation. For this we had to consider ways of capturing such an abstract concept as emotion, which can be reflected in various forms that can be open for interpretation. ',
+      'During the last few years Bristol has seen demonstrations against housing developers jeopardizing the operating of grassroots music venues, making it clear that it is a political issue with an emotional charge. The aim of Saving Bristol Sound was to convey these feelings to a larger audience through an interactive installation. For this we had to consider ways of capturing such an abstract concept as emotion, which can be reflected in various forms that can be open for interpretation. ',
     process:
       'Our research started at an exhibition called Seven Decades of Sound, hosted by the M-Shed in Bristol. It focused on the evolution of the city’s music scene over the last seventy years, and along with providing us inspiration for our topic, it featured a variety of interactive experiences. These included a booth equipped with headphones that users could use to listen to the ambience at various venues. This was of interest to us as it engaged with an audience that may not frequently visit these locales, and succeeded in telling a story of what the Bristolian music scene sounds and feels like. To carry out our future research , we mapped out integral topics, research questions and methods. The focus was on reaching out to Bristolians associated with iconic venues that have either been closed, or under the threat of closure, to gain firsthand information on why these venues are so beloved by Bristolians. Desk research was done to gain deeper understanding on why gentrification has led to this development, after which some on-site observation was conducted at yet another legendary Bristol venue, The Exchange. The field research provided proof of these venues cultivating discussion, social movement and networking opportunities as individuals from all over the South West would gather together mostly for the music, but also the community.',
     solution:
@@ -86,6 +86,36 @@ export const projectsData = [
     videourl: 'https://vimeo.com/341074275',
     contributors:
       'Alan Long, Ryan Avery, Saara Rautiainen, Teodora Muresan, Nikki Pantony, Rajon Rahman',
+    repo: '', // if no repo, the button will not show up
+  },
+  {
+    id: nanoid(),
+    path: 'robotux',
+    img: 'nao-cover.png',
+    solutionimgs: ['uxro-solution.png'],
+
+    processimgs: [
+      'uxro-problemspace.png',
+      'uxro-interaction-flow.png',
+      'uxro-attitudes.png',
+      'uxro-interviewfind.png',
+    ],
+    imgs: '',
+    title: 'Social Robotics - Pepper the Language Tutor',
+    info:
+      'The project examines the possibilities and challenges of utilizing social robots in foreign language learning. The user research of the project aimed to focus on the cross-cultural aspect of Human-Robot Interaction (HRI) in Robot-Assisted Language Learning (RALL) and look into the attitudes surrounding social robotics. We had the opportunity of learning about social robotics from the talented Minja Axelsson, and utilizing co-creation canvases designed by her in our project. ',
+    info2:
+      'The project was conducted in the Autumn of 2020, which called for creativity and flexibility, as the research, ideation and implementation was conducted between two countries on Zoom and Mural.',
+    problem:
+      'Our objective for the project was to research our target users’ attitudes towards social robots, especially in the realm of language-learning. There was an emphasis on cross-culturality, which is why for two target groups were decided on: students from Finland as well as Southeast Asia. We wanted to find out if there were any differences between the cultures in regards to the acceptance of the robot, their cultural needs in language learning as well as their expectations from a social robot. The co-creation canvases used are designed by Minja Axelsson.',
+    process:
+      'A preliminary user study was conducted with two target groups consisting of Finnish and South-Asian participants. The participants of the study were mostly students or users from a similar age group. The pre-study aimed to focus on the cross-cultural aspect of Human-Robot Interaction (HRI) in Robot-Assisted Language Learning (RALL) and look into the attitudes surrounding social robotics. The pre-study consisted of semi-structured interviews and a survey, which included questions regarding the participants’ perceptions of robots as language tutors, as well as the impact the robots could have on their language learning goals. The language learning goals of the participants and their attitudes towards social robots did not differ significantly between the target groups, however, there were some differences in ways in which Finnish and South-Asians generally approached language learning, and what they expected from the robot.',
+    solution:
+      'The solution accommodates different types of language learners with varying requirements from our findings. Through utilizing a human-centered approach we distinguished three different study topics that students may want to focus on, regarding their learning goals: vocabulary, practical study, and conversation. The design was implemented on Pepper robot and the prototype of the concept was then evaluated by participants who filled out a user evaluation survey. The prototype was received well, but the responses in the final survey, as well as the first one, revealed some hesitation toward interacting with a social robot, and doubts about their skills. The overall attitudes were nevertheless positive and suggested that the participants could see the robot utilized as a motivator for young students, for instance. As the majority of the participants were still rather skeptical, we concluded that within the frames of current technology, robots can help improve language learning by increasing engagement and motivation but still pose limitations. Thus, social robots are best utilized as tools for learning or tutors for extra practice.',
+    url: '',
+    keywords: 'UX design, UX research, Social Robotics, Assistive technologies',
+    videourl: 'https://youtu.be/GVa0C_OLZcY',
+    contributors: 'Ishan Regmi, Venla Kamppari, Saara Rautiainen',
     repo: '', // if no repo, the button will not show up
   },
 ];
